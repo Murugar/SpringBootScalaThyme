@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SpringBoot Scala Thymeleaf</title>
+</head>
+<body>
+
+<h1>Welcome Home From SpringBoot Scala Thymeleaf</h1>
+
+<table>
+
+
+
+<tr  th:each="user : ${userList}">
+    <td th:text="${user.username}">Onions</td>
+    <td th:text="${user.password}">test@test.com.cn</td>
+</tr>
+
+</table>
+</body>
+</html>
